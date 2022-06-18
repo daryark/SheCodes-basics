@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About abstract art</title>
+    <link rel="shortcut icon" href="photos/yt.png" type="image/x-icon" />
+    <style>
+      body {
+        text-align: center;
+        max-width: 1200px;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+      }
+      .navlogo {
+        width: 48px;
+        margin-right: 70%;
+      }
+      .navlogo-wrapper {
+        width: 50%;
+      }
+      .navinsta-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 20px;
+      }
+      .icon-wrapper {
+        margin: 10px;
+      }
+      h1 {
+        font-family: Baskerville, serif;
+        font-size: 48px;
+        color: #1f2720;
+        margin: 0 auto;
+      }
+      h2 {
+        font-family: Baskerville, serif;
+        color: #bfe908;
+        margin: 15px auto 40px auto;
+      }
+      .image {
+        width: 85%;
+        display: block;
+        margin: 0 auto 5px auto;
+        max-height: 700px;
+        max-width: 700px;
+      }
+      img {
+        width: 24px;
+        display: inline;
+      }
+      a {
+        color: #aaaaaa;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline;
+      }
+      a:hover {
+        color: #bfe908;
+        text-decoration: underline;
+      }
+      .text {
+        width: 84%;
+        margin: 45px auto 25px auto;
+      }
+      .link {
+        font-size: 14px;
+      }
+      p {
+        color: #1f2720;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 165%;
+        font-size: larger;
+        text-align: left;
+      }
+      button {
+        padding: 15px 30px;
+        color: #fff;
+        background-color: #47780c;
+        border-radius: 30px;
+        border: transparent;
+        display: block;
+        margin: 40px auto;
+      }
+      button:hover {
+        background-color: #bfe908;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      .coder {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 30px 0;
+      }
+      .coder:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="..." class="navlogo-wrapper"
+        ><img src="photos/yt.png" alt="Y.T" class="navlogo" />
+      </a>
+      <div class="navinsta-wrapper">
+        <a href="https://t.me/dar_y_ark" target="_blank"
+          ><img
+            src="photos/telegramlogo.png"
+            alt="telegram"
+            class="icon-wrapper"
+        /></a>
+        <a href="https://www.instagram.com/y.t.abstract/" target="_blank"
+          ><img src="photos/instalogo.png" alt="instagram" class="icon-wrapper"
+        /></a>
+      </div>
+    </nav>
+    <section>
+      <h1>I love abstract art</h1>
+      <h2>Feel abstract art and its unique energy in each work</h2>
+      <img src="photos/painting.jpg" alt="abstract painting" class="image" />
+      <a href="https://www.instagram.com/y.t.abstract/" target="_blank">
+        View my abstract paintings
+      </a>
+      <p class="text">
+        There are a number of definitions of abstract art. The real question is
+        - is it really possible to have one, coherent abstract art definition
+        that would include all complexities of this movement? But, we could say
+        that abstract artists use a visual language of shape, form, color, and
+        line to create a composition which may exist with a degree of
+        independence from visual references in the world. Abstract art movement
+        does not depict a person, place or thing in the natural world; or it
+        does, but does not make any visual references.What is very important to
+        mention when trying to define abstract art is the fact that abstract
+        artists do not deal with the representational interpretation of a
+        subject. The idea is to only communicate with the viewers in an attempt
+        to understand “reality”. All types of abstract art share a common
+        position – reality is s ubjective and not concrete, and it’s up to a
+        viewer to define it.<br />
+        <span class="link text">
+          <em
+            >You can read more about abstract art
+            <a
+              href="https://www.widewalls.ch/magazine/what-is-abstract-art-informel"
+              target="_blank"
+              >here
+            </a></em
+          >
+        </span>
+        <button>Buy a painting</button>
+      </p>
+
+      <hr />
+      <a class="coder">This page was coded by Dasha Yarkovska</a>
+    </section>
+    <script>
+      function buyArt() {
+        let name = prompt("What is your name?");
+        let art = prompt(
+          "What kind of artwork do you search? Size, color preferences etc... "
+        );
+        let question = prompt(
+          "Do you want to contact via e-mail or instagram?"
+        );
+        let personAnswer = "instagram";
+        if (question.toLowerCase() === personAnswer) {
+          let instagram = prompt("Enter your instagram");
+        } else {
+          let email = prompt("Enter your e-mail");
+        }
+        let myAnswer = alert(
+          "Thank you, " +
+            name +
+            "! We'll select works by your preferences and send you 📩"
+        );
+        alert("Feel free to view the whole gallery in instagram 🖼");
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyArt);
+    </script>
+  </body>
+</html>
